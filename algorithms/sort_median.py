@@ -4,7 +4,7 @@ Task number five, build a function to find the median using the built in sort fu
 Author: Tom Fischer
 
 """
-def median (pList: list) -> int:
+def sort_median (pList: list) -> int:
     """ Returns the median number of a list as a float.
 
     Args:
