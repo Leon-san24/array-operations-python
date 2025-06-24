@@ -1,5 +1,18 @@
+"""
+Task six coding a quicksort.
 
+Author: Tom Fischer
+
+"""
 def quicksort(pList: list) -> list:
+    """ Choose a divider and sorts all bigger numbers to the right and all smaller to the left.
+
+    Args:
+        pList (list): List object filled with only numbers.
+
+    Returns:
+        List: Sorted List
+    """
     return increment(pList, 0, len(pList))
 
 def increment (pList, start, end):
@@ -20,8 +33,3 @@ def increment (pList, start, end):
         end -=1  
     pList = increment(pList,start,end)
     return pList
-
-
-list = [5,2,8,2,67,2,46,23,56,76,1,43,10]
-#list = [6,1,43,10]
-print (quicksort(list))
