@@ -1,1 +1,6 @@
 documentation/bubble_sort.png filter=lfs diff=lfs merge=lfs -text
+documentation/bubble_sort.nsd filter=lfs diff=lfs merge=lfs -text
+documentation/merge_sort.nsd filter=lfs diff=lfs merge=lfs -text
+documentation/merge_sort.png filter=lfs diff=lfs merge=lfs -text
+documentation/merge.nsd filter=lfs diff=lfs merge=lfs -text
+documentation/merge.png filter=lfs diff=lfs merge=lfs -text
