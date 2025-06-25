@@ -15,7 +15,7 @@ def quicksort(pList: list) -> list:
     """
     return increment(pList, 0, len(pList))
 
-def increment (pList, start, end):
+def increment (pList: list, start: int, end: int) -> list:
     if start + 1 == end or start -1 == end or start == end:
         return pList
     oend = end
