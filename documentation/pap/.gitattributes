@@ -1,3 +1,0 @@
-average.png filter=lfs diff=lfs merge=lfs -text
-median.png filter=lfs diff=lfs merge=lfs -text
-smallest.png filter=lfs diff=lfs merge=lfs -text
