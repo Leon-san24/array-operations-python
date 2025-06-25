@@ -4,7 +4,7 @@ Task six coding a quicksort.
 Author: Tom Fischer
 
 """
-def quicksort(pList: list) -> list:
+def quick_sort(pList: list) -> list:
     """ Choose a divider and sorts all bigger numbers to the right and all smaller to the left.
 
     Args:
@@ -18,7 +18,7 @@ def quicksort(pList: list) -> list:
 def increment (pList: list, start: int, end: int) -> list:
     if start + 1 == end or start -1 == end or start == end:
         return pList
-    oend = end
+    o_end = end
     divider = pList[end - 1]
     for i in range (start, end):
         while pList[i]>divider:
@@ -28,8 +28,8 @@ def increment (pList: list, start: int, end: int) -> list:
             end -= 1
         if i >= end:
             break     
-    pList = increment(pList,end,oend)
-    if end == oend:
+    pList = increment(pList,end,o_end)
+    if end == o_end:
         end -=1  
     pList = increment(pList,start,end)
     return pList

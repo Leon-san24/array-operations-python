@@ -13,6 +13,7 @@ from algorithms.sort_smallest import sort_smallest
 from algorithms.list_sum import list_sum, list_average
 from algorithms.sort_median import sort_median
 from algorithms.sort_list import bubble_sort, merge_sort
+from algorithms.sort_quick import quick_sort
 
 
 def clear_terminal():
@@ -153,7 +154,8 @@ def main():
                     print(f"List: {numbers}")
                     print("1. Bubble Sort")
                     print("2. Merge Sort")
-                    sort_choice = input("Sort choice (1-2): ").strip()
+                    print("3. Quick Sort")
+                    sort_choice = input("Sort choice (1-3): ").strip()
                     clear_terminal()
                     match sort_choice:
                         case '1':
@@ -165,6 +167,11 @@ def main():
                             result, exec_time = time_function(merge_sort, numbers.copy())
                             print(f"Original: {numbers}")
                             print(f"Merge Sort: {result}")
+                            print(f"Execution time: {exec_time:.4f} ms")
+                        case '3':
+                            result, exec_time = time_function(quick_sort, numbers.copy())
+                            print(f"Original: {numbers}")
+                            print(f"Quick Sort: {result}")
                             print(f"Execution time: {exec_time:.4f} ms")
                         case _:
                             print("Invalid sort choice.")
