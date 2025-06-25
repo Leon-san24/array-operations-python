@@ -21,7 +21,6 @@ def bubble_sort(pList: list) -> list:
         for j in range(len(pList)-i-1):
             if pList[j] > pList[j+1]:
                 pList[j], pList[j + 1] = pList[j + 1], pList[j]
-    
     return pList
 
 def merge(pLeft: list, pRight: list) -> list:
@@ -63,9 +62,4 @@ def merge_sort(pList: list) -> list:
     left = merge_sort(pList[:mid])
     right = merge_sort(pList[mid:])
     return merge(left, right)
-
-
     
-
-def insertion_sort():
-    NotImplemented
